@@ -1,0 +1,12 @@
+drop=None  using 36 of 36 bands
+split 0: AUC xgb 0.9282 cnn 0.9191 | XGB_TreeSHAP~XGB_Perm=0.92  XGB_TreeSHAP~CNN_IG=0.54  XGB_TreeSHAP~CNN_GradSHAP=0.46  XGB_TreeSHAP~CNN_Perm=0.49  XGB_Perm~CNN_IG=0.47  XGB_Perm~CNN_GradSHAP=0.42  XGB_Perm~CNN_Perm=0.49  CNN_IG~CNN_GradSHAP=0.73  CNN_IG~CNN_Perm=0.75  CNN_GradSHAP~CNN_Perm=0.94  (242s)
+split 1: AUC xgb 0.9314 cnn 0.9328 | XGB_TreeSHAP~XGB_Perm=0.92  XGB_TreeSHAP~CNN_IG=0.57  XGB_TreeSHAP~CNN_GradSHAP=0.56  XGB_TreeSHAP~CNN_Perm=0.47  XGB_Perm~CNN_IG=0.50  XGB_Perm~CNN_GradSHAP=0.57  XGB_Perm~CNN_Perm=0.48  CNN_IG~CNN_GradSHAP=0.78  CNN_IG~CNN_Perm=0.67  CNN_GradSHAP~CNN_Perm=0.93  (278s)
+split 2: AUC xgb 0.9218 cnn 0.9448 | XGB_TreeSHAP~XGB_Perm=0.83  XGB_TreeSHAP~CNN_IG=0.56  XGB_TreeSHAP~CNN_GradSHAP=0.59  XGB_TreeSHAP~CNN_Perm=0.52  XGB_Perm~CNN_IG=0.34  XGB_Perm~CNN_GradSHAP=0.44  XGB_Perm~CNN_Perm=0.42  CNN_IG~CNN_GradSHAP=0.79  CNN_IG~CNN_Perm=0.72  CNN_GradSHAP~CNN_Perm=0.89  (711s)
+split 3: AUC xgb 0.9066 cnn 0.9228 | XGB_TreeSHAP~XGB_Perm=0.75  XGB_TreeSHAP~CNN_IG=0.45  XGB_TreeSHAP~CNN_GradSHAP=0.57  XGB_TreeSHAP~CNN_Perm=0.54  XGB_Perm~CNN_IG=0.39  XGB_Perm~CNN_GradSHAP=0.51  XGB_Perm~CNN_Perm=0.55  CNN_IG~CNN_GradSHAP=0.81  CNN_IG~CNN_Perm=0.74  CNN_GradSHAP~CNN_Perm=0.94  (352s)
+split 4: AUC xgb 0.9409 cnn 0.9395 | XGB_TreeSHAP~XGB_Perm=0.95  XGB_TreeSHAP~CNN_IG=0.54  XGB_TreeSHAP~CNN_GradSHAP=0.53  XGB_TreeSHAP~CNN_Perm=0.52  XGB_Perm~CNN_IG=0.49  XGB_Perm~CNN_GradSHAP=0.55  XGB_Perm~CNN_Perm=0.59  CNN_IG~CNN_GradSHAP=0.75  CNN_IG~CNN_Perm=0.72  CNN_GradSHAP~CNN_Perm=0.89  (300s)
+within-model rho 0.821  cross-model rho 0.504
+XGB_TreeSHAP  split-stability rho 0.95  top: ['swat_rainfall', 'swat_dem', 'swat_s1_vh', 'swat_slope', 'swat_s2_composite_b3']
+XGB_Perm      split-stability rho 0.80  top: ['swat_rainfall', 'swat_dem', 'swat_s1_vh', 'swat_s1_vv', 'swat_s2_composite_b3']
+CNN_IG        split-stability rho 0.92  top: ['swat_dem', 'swat_ndvi', 'swat_hand', 'swat_rainfall', 'swat_mndwi']
+CNN_GradSHAP  split-stability rho 0.88  top: ['swat_ndvi', 'swat_s2_composite_b5', 'swat_ndwi', 'swat_s2_composite_b4', 'swat_s1_vv']
+CNN_Perm      split-stability rho 0.86  top: ['swat_s2_composite_b5', 'swat_ndwi', 'swat_s2_composite_b4', 'swat_ndvi', 'swat_s1_vh']

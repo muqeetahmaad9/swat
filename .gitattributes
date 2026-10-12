@@ -1,0 +1,5 @@
+*.tif binary
+*.pt binary
+*.pkl binary
+*.npz binary
+*.pdf binary

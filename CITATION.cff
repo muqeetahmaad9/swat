@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+title: >-
+  Flood susceptibility in the Swat Basin, Pakistan: spatial validation and
+  explanation agreement (code, flood inventory and results)
+message: >-
+  If you use this software or the flood inventory, please cite both this
+  record and the accompanying paper.
+type: software
+authors:
+  - given-names: Muqeet
+    family-names: Ahmad
+    email: muqeetahmad155@gmail.com
+    affiliation: >-
+      Department of Computer Engineering, COMSATS University Islamabad,
+      Attock Campus, Attock, Pakistan
+  - given-names: Qazi Zia
+    family-names: Ullah
+    affiliation: >-
+      Department of Computer Engineering, COMSATS University Islamabad,
+      Attock Campus, Attock, Pakistan
+abstract: >-
+  Code, Google Earth Engine scripts, a two-event (2022, 2025) Sentinel-1
+  flood inventory and results for a study of machine-learning flood
+  susceptibility mapping in the Swat Basin, Pakistan. Includes random
+  forest, XGBoost, LightGBM, a patch CNN and SegFormer models, repeated
+  spatial cross-validation, data-source removal tests and an analysis of
+  agreement between explanation methods.
+keywords:
+  - flood susceptibility
+  - spatial cross-validation
+  - explainable AI
+  - Sentinel-1
+  - convolutional neural network
+  - Pakistan
+license: MIT
+version: 2.0.0
+date-released: '2026-10-12'

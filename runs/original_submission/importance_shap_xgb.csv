@@ -1,0 +1,16 @@
+# feature,mean_abs_shap
+swat_rainfall,0.77553827
+swat_dem,0.6110514
+swat_s1_vh,0.44675946
+swat_slope,0.38761115
+swat_s1_vv,0.32718787
+swat_mndwi,0.32176396
+swat_s2_composite_b3,0.3125519
+swat_s2_composite_b0,0.23015936
+swat_lulc_cls50,0.22314797
+swat_ndwi,0.20475893
+swat_s2_composite_b1,0.16067436
+swat_tpi1000,0.15791556
+swat_s2_composite_b4,0.14167465
+swat_profcurv,0.1403229
+swat_logfacc,0.13767867

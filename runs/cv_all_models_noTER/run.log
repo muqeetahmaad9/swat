@@ -1,0 +1,32 @@
+drop=TER  using 11 of 36 bands
+C:\Users\4975osama\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\utils\validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+  split 0 CNN seed 0: val 0.9349 (ep 11) test 0.9238
+  split 0 CNN seed 1: val 0.9349 (ep 11) test 0.9266
+  split 0 CNN seed 2: val 0.9323 (ep 5) test 0.9186
+split 0: RF 0.8365  XGBoost 0.8405  LightGBM 0.8386  CNN 0.9230  (n_test=3370, prev=0.48, 224s)
+C:\Users\4975osama\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\utils\validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+  split 1 CNN seed 0: val 0.9417 (ep 26) test 0.9209
+  split 1 CNN seed 1: val 0.9349 (ep 13) test 0.9197
+  split 1 CNN seed 2: val 0.9394 (ep 19) test 0.9270
+split 1: RF 0.8376  XGBoost 0.8457  LightGBM 0.8459  CNN 0.9225  (n_test=2691, prev=0.48, 487s)
+C:\Users\4975osama\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\utils\validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+  split 2 CNN seed 0: val 0.9378 (ep 1) test 0.8974
+  split 2 CNN seed 1: val 0.9451 (ep 8) test 0.9092
+  split 2 CNN seed 2: val 0.9436 (ep 1) test 0.8966
+split 2: RF 0.8262  XGBoost 0.8344  LightGBM 0.8309  CNN 0.9011  (n_test=2736, prev=0.45, 151s)
+C:\Users\4975osama\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\utils\validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+  split 3 CNN seed 0: val 0.9345 (ep 20) test 0.9233
+  split 3 CNN seed 1: val 0.9360 (ep 16) test 0.9243
+  split 3 CNN seed 2: val 0.9373 (ep 27) test 0.9332
+split 3: RF 0.8424  XGBoost 0.8478  LightGBM 0.8478  CNN 0.9269  (n_test=2380, prev=0.37, 416s)
+C:\Users\4975osama\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\utils\validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+  split 4 CNN seed 0: val 0.9277 (ep 13) test 0.9304
+  split 4 CNN seed 1: val 0.9311 (ep 28) test 0.9370
+  split 4 CNN seed 2: val 0.9323 (ep 21) test 0.9302
+split 4: RF 0.8698  XGBoost 0.8703  LightGBM 0.8674  CNN 0.9325  (n_test=3128, prev=0.54, 526s)
+{'RF': '0.8425±0.0146', 'XGBoost': '0.8478±0.0122', 'LightGBM': '0.8461±0.0122', 'CNN': '0.9212±0.0107'}

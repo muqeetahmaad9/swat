@@ -1,0 +1,509 @@
+{
+  "pairs": {
+    "XGB_TreeSHAP|XGB_Perm": {
+      "mean": 0.8734620334620334,
+      "std": 0.07412297965895011,
+      "per_split": [
+        0.9214929214929215,
+        0.9235521235521235,
+        0.8252252252252252,
+        0.7508365508365509,
+        0.9462033462033463
+      ],
+      "type": "within-model",
+      "top5_overlap_mean": 0.8
+    },
+    "XGB_TreeSHAP|CNN_IG": {
+      "mean": 0.5323037323037323,
+      "std": 0.04067836269331313,
+      "per_split": [
+        0.5407979407979409,
+        0.5683397683397683,
+        0.5583011583011583,
+        0.45379665379665374,
+        0.5402831402831403
+      ],
+      "type": "cross-model",
+      "top5_overlap_mean": 0.31999999999999995
+    },
+    "XGB_TreeSHAP|CNN_GradSHAP": {
+      "mean": 0.5401287001287003,
+      "std": 0.04524818325140278,
+      "per_split": [
+        0.4571428571428572,
+        0.5557271557271558,
+        0.5881595881595881,
+        0.5673101673101674,
+        0.5323037323037323
+      ],
+      "type": "cross-model",
+      "top5_overlap_mean": 0.12000000000000002
+    },
+    "XGB_TreeSHAP|CNN_Perm": {
+      "mean": 0.5092406692406692,
+      "std": 0.025645954225563147,
+      "per_split": [
+        0.4908622908622909,
+        0.4697554697554697,
+        0.5217503217503218,
+        0.5420849420849422,
+        0.5217503217503218
+      ],
+      "type": "cross-model",
+      "top5_overlap_mean": 0.16
+    },
+    "XGB_Perm|CNN_IG": {
+      "mean": 0.4385070785070786,
+      "std": 0.06177833543649459,
+      "per_split": [
+        0.4674388674388675,
+        0.5029601029601031,
+        0.34079794079794085,
+        0.39305019305019306,
+        0.4882882882882883
+      ],
+      "type": "cross-model",
+      "top5_overlap_mean": 0.31999999999999995
+    },
+    "XGB_Perm|CNN_GradSHAP": {
+      "mean": 0.49904761904761913,
+      "std": 0.0577500638446921,
+      "per_split": [
+        0.42033462033462043,
+        0.5680823680823681,
+        0.44478764478764476,
+        0.5119691119691121,
+        0.5500643500643502
+      ],
+      "type": "cross-model",
+      "top5_overlap_mean": 0.24
+    },
+    "XGB_Perm|CNN_Perm": {
+      "mean": 0.505894465894466,
+      "std": 0.062265883075621094,
+      "per_split": [
+        0.49009009009009014,
+        0.4767052767052767,
+        0.4151866151866152,
+        0.5531531531531532,
+        0.5943371943371945
+      ],
+      "type": "cross-model",
+      "top5_overlap_mean": 0.24
+    },
+    "CNN_IG|CNN_GradSHAP": {
+      "mean": 0.7726640926640927,
+      "std": 0.02708477008671861,
+      "per_split": [
+        0.7320463320463321,
+        0.7830115830115831,
+        0.7861003861003861,
+        0.8092664092664092,
+        0.752895752895753
+      ],
+      "type": "within-model",
+      "top5_overlap_mean": 0.32
+    },
+    "CNN_IG|CNN_Perm": {
+      "mean": 0.7187129987129988,
+      "std": 0.029810194918519984,
+      "per_split": [
+        0.752895752895753,
+        0.6651222651222651,
+        0.7160875160875162,
+        0.7384813384813386,
+        0.720978120978121
+      ],
+      "type": "within-model",
+      "top5_overlap_mean": 0.36
+    },
+    "CNN_GradSHAP|CNN_Perm": {
+      "mean": 0.9172200772200773,
+      "std": 0.024069112557844292,
+      "per_split": [
+        0.9436293436293436,
+        0.9276705276705277,
+        0.8888030888030889,
+        0.937966537966538,
+        0.888030888030888
+      ],
+      "type": "within-model",
+      "top5_overlap_mean": 0.9199999999999999
+    }
+  },
+  "cross_split_stability": {
+    "XGB_TreeSHAP": {
+      "mean": 0.9517889317889319,
+      "min": 0.9232947232947233,
+      "max": 0.9652509652509653
+    },
+    "XGB_Perm": {
+      "mean": 0.7970141570141572,
+      "min": 0.6764478764478766,
+      "max": 0.8746460746460748
+    },
+    "CNN_IG": {
+      "mean": 0.91984555984556,
+      "min": 0.8633204633204633,
+      "max": 0.9549549549549551
+    },
+    "CNN_GradSHAP": {
+      "mean": 0.8787644787644788,
+      "min": 0.7974259974259974,
+      "max": 0.9382239382239383
+    },
+    "CNN_Perm": {
+      "mean": 0.8607979407979409,
+      "min": 0.7503217503217503,
+      "max": 0.9377091377091378
+    }
+  },
+  "top10_mean": {
+    "XGB_TreeSHAP": [
+      "swat_rainfall",
+      "swat_dem",
+      "swat_s1_vh",
+      "swat_slope",
+      "swat_s2_composite_b3",
+      "swat_s1_vv",
+      "swat_mndwi",
+      "swat_s2_composite_b0",
+      "swat_ndwi",
+      "swat_lulc_cls50"
+    ],
+    "XGB_Perm": [
+      "swat_rainfall",
+      "swat_dem",
+      "swat_s1_vh",
+      "swat_s1_vv",
+      "swat_s2_composite_b3",
+      "swat_lulc_cls50",
+      "swat_slope",
+      "swat_mndwi",
+      "swat_s2_composite_b0",
+      "swat_tpi1000"
+    ],
+    "CNN_IG": [
+      "swat_dem",
+      "swat_ndvi",
+      "swat_hand",
+      "swat_rainfall",
+      "swat_mndwi",
+      "swat_spi",
+      "swat_ndwi",
+      "swat_s2_composite_b4",
+      "swat_s2_composite_b0",
+      "swat_s2_composite_b2"
+    ],
+    "CNN_GradSHAP": [
+      "swat_ndvi",
+      "swat_s2_composite_b5",
+      "swat_ndwi",
+      "swat_s2_composite_b4",
+      "swat_s1_vv",
+      "swat_s1_vh",
+      "swat_spi",
+      "swat_mndwi",
+      "swat_rainfall",
+      "swat_dem"
+    ],
+    "CNN_Perm": [
+      "swat_s2_composite_b5",
+      "swat_ndwi",
+      "swat_s2_composite_b4",
+      "swat_ndvi",
+      "swat_s1_vh",
+      "swat_s1_vv",
+      "swat_mndwi",
+      "swat_spi",
+      "swat_rainfall",
+      "swat_lulc_cls50"
+    ]
+  },
+  "source_share_mean": {
+    "XGB_TreeSHAP": {
+      "SAR": 0.15406402051448823,
+      "OPT": 0.28073459267616274,
+      "TER": 0.5652014136314392
+    },
+    "XGB_Perm": {
+      "SAR": 0.22411504927708653,
+      "OPT": 0.16081570675575702,
+      "TER": 0.6150692439671566
+    },
+    "CNN_IG": {
+      "SAR": 0.04792663938337738,
+      "OPT": 0.45261800895732984,
+      "TER": 0.49945535165929283
+    },
+    "CNN_GradSHAP": {
+      "SAR": 0.12146891131595752,
+      "OPT": 0.5855283102520636,
+      "TER": 0.29300277843197886
+    },
+    "CNN_Perm": {
+      "SAR": 0.14800444063000437,
+      "OPT": 0.6141667391950151,
+      "TER": 0.23782882017498044
+    }
+  },
+  "summary": {
+    "within_model_rho_mean": 0.8205148005148005,
+    "cross_model_rho_mean": 0.5041870441870442
+  },
+  "per_split": [
+    {
+      "auc_xgb": 0.9281942537890984,
+      "auc_cnn": 0.9191307104806775,
+      "rho": {
+        "XGB_TreeSHAP|XGB_Perm": 0.9214929214929215,
+        "XGB_TreeSHAP|CNN_IG": 0.5407979407979409,
+        "XGB_TreeSHAP|CNN_GradSHAP": 0.4571428571428572,
+        "XGB_TreeSHAP|CNN_Perm": 0.4908622908622909,
+        "XGB_Perm|CNN_IG": 0.4674388674388675,
+        "XGB_Perm|CNN_GradSHAP": 0.42033462033462043,
+        "XGB_Perm|CNN_Perm": 0.49009009009009014,
+        "CNN_IG|CNN_GradSHAP": 0.7320463320463321,
+        "CNN_IG|CNN_Perm": 0.752895752895753,
+        "CNN_GradSHAP|CNN_Perm": 0.9436293436293436
+      },
+      "source_share": {
+        "XGB_TreeSHAP": {
+          "SAR": 0.14419087767601013,
+          "OPT": 0.2712012529373169,
+          "TER": 0.5846078395843506
+        },
+        "XGB_Perm": {
+          "SAR": 0.20138082709147864,
+          "OPT": 0.15833982946923408,
+          "TER": 0.6402793434392873
+        },
+        "CNN_IG": {
+          "SAR": 0.07065546842350692,
+          "OPT": 0.3505083845239464,
+          "TER": 0.5788361470525467
+        },
+        "CNN_GradSHAP": {
+          "SAR": 0.16931868481654067,
+          "OPT": 0.4306603880002485,
+          "TER": 0.4000209271832109
+        },
+        "CNN_Perm": {
+          "SAR": 0.20547828846296648,
+          "OPT": 0.4820473821818001,
+          "TER": 0.31247432935523345
+        }
+      }
+    },
+    {
+      "auc_xgb": 0.9313805819552946,
+      "auc_cnn": 0.9328362995029663,
+      "rho": {
+        "XGB_TreeSHAP|XGB_Perm": 0.9235521235521235,
+        "XGB_TreeSHAP|CNN_IG": 0.5683397683397683,
+        "XGB_TreeSHAP|CNN_GradSHAP": 0.5557271557271558,
+        "XGB_TreeSHAP|CNN_Perm": 0.4697554697554697,
+        "XGB_Perm|CNN_IG": 0.5029601029601031,
+        "XGB_Perm|CNN_GradSHAP": 0.5680823680823681,
+        "XGB_Perm|CNN_Perm": 0.4767052767052767,
+        "CNN_IG|CNN_GradSHAP": 0.7830115830115831,
+        "CNN_IG|CNN_Perm": 0.6651222651222651,
+        "CNN_GradSHAP|CNN_Perm": 0.9276705276705277
+      },
+      "source_share": {
+        "XGB_TreeSHAP": {
+          "SAR": 0.1445164680480957,
+          "OPT": 0.2868080735206604,
+          "TER": 0.5686755776405334
+        },
+        "XGB_Perm": {
+          "SAR": 0.19437036092922108,
+          "OPT": 0.1399100376524823,
+          "TER": 0.6657196014182967
+        },
+        "CNN_IG": {
+          "SAR": 0.03346628921295894,
+          "OPT": 0.5179580787154087,
+          "TER": 0.44857563207163254
+        },
+        "CNN_GradSHAP": {
+          "SAR": 0.12219967338602757,
+          "OPT": 0.6221581801702203,
+          "TER": 0.25564214644375216
+        },
+        "CNN_Perm": {
+          "SAR": 0.1535018878272284,
+          "OPT": 0.6418352117143666,
+          "TER": 0.20466290045840516
+        }
+      }
+    },
+    {
+      "auc_xgb": 0.9218349511842323,
+      "auc_cnn": 0.944752709172708,
+      "rho": {
+        "XGB_TreeSHAP|XGB_Perm": 0.8252252252252252,
+        "XGB_TreeSHAP|CNN_IG": 0.5583011583011583,
+        "XGB_TreeSHAP|CNN_GradSHAP": 0.5881595881595881,
+        "XGB_TreeSHAP|CNN_Perm": 0.5217503217503218,
+        "XGB_Perm|CNN_IG": 0.34079794079794085,
+        "XGB_Perm|CNN_GradSHAP": 0.44478764478764476,
+        "XGB_Perm|CNN_Perm": 0.4151866151866152,
+        "CNN_IG|CNN_GradSHAP": 0.7861003861003861,
+        "CNN_IG|CNN_Perm": 0.7160875160875162,
+        "CNN_GradSHAP|CNN_Perm": 0.8888030888030889
+      },
+      "source_share": {
+        "XGB_TreeSHAP": {
+          "SAR": 0.15685953199863434,
+          "OPT": 0.28755074739456177,
+          "TER": 0.5555897951126099
+        },
+        "XGB_Perm": {
+          "SAR": 0.23992364683803252,
+          "OPT": 0.15853726855958414,
+          "TER": 0.6015390846023831
+        },
+        "CNN_IG": {
+          "SAR": 0.04914234983850206,
+          "OPT": 0.4700316592869411,
+          "TER": 0.48082599087455685
+        },
+        "CNN_GradSHAP": {
+          "SAR": 0.09392924452405244,
+          "OPT": 0.6610151736323027,
+          "TER": 0.24505558184364493
+        },
+        "CNN_Perm": {
+          "SAR": 0.11607084130103125,
+          "OPT": 0.659397747217441,
+          "TER": 0.22453141148152744
+        }
+      }
+    },
+    {
+      "auc_xgb": 0.9065880619012527,
+      "auc_cnn": 0.9227730854259963,
+      "rho": {
+        "XGB_TreeSHAP|XGB_Perm": 0.7508365508365509,
+        "XGB_TreeSHAP|CNN_IG": 0.45379665379665374,
+        "XGB_TreeSHAP|CNN_GradSHAP": 0.5673101673101674,
+        "XGB_TreeSHAP|CNN_Perm": 0.5420849420849422,
+        "XGB_Perm|CNN_IG": 0.39305019305019306,
+        "XGB_Perm|CNN_GradSHAP": 0.5119691119691121,
+        "XGB_Perm|CNN_Perm": 0.5531531531531532,
+        "CNN_IG|CNN_GradSHAP": 0.8092664092664092,
+        "CNN_IG|CNN_Perm": 0.7384813384813386,
+        "CNN_GradSHAP|CNN_Perm": 0.937966537966538
+      },
+      "source_share": {
+        "XGB_TreeSHAP": {
+          "SAR": 0.15338782966136932,
+          "OPT": 0.29084089398384094,
+          "TER": 0.5557712316513062
+        },
+        "XGB_Perm": {
+          "SAR": 0.25090699873401817,
+          "OPT": 0.19099122797047113,
+          "TER": 0.5581017732955108
+        },
+        "CNN_IG": {
+          "SAR": 0.03560523891270136,
+          "OPT": 0.4363530115612183,
+          "TER": 0.5280417495260803
+        },
+        "CNN_GradSHAP": {
+          "SAR": 0.08498519097152285,
+          "OPT": 0.6172607686596102,
+          "TER": 0.2977540403688669
+        },
+        "CNN_Perm": {
+          "SAR": 0.12481285299065394,
+          "OPT": 0.6250074355233894,
+          "TER": 0.2501797114859564
+        }
+      }
+    },
+    {
+      "auc_xgb": 0.940865562451194,
+      "auc_cnn": 0.9394603592125272,
+      "rho": {
+        "XGB_TreeSHAP|XGB_Perm": 0.9462033462033463,
+        "XGB_TreeSHAP|CNN_IG": 0.5402831402831403,
+        "XGB_TreeSHAP|CNN_GradSHAP": 0.5323037323037323,
+        "XGB_TreeSHAP|CNN_Perm": 0.5217503217503218,
+        "XGB_Perm|CNN_IG": 0.4882882882882883,
+        "XGB_Perm|CNN_GradSHAP": 0.5500643500643502,
+        "XGB_Perm|CNN_Perm": 0.5943371943371945,
+        "CNN_IG|CNN_GradSHAP": 0.752895752895753,
+        "CNN_IG|CNN_Perm": 0.720978120978121,
+        "CNN_GradSHAP|CNN_Perm": 0.888030888030888
+      },
+      "source_share": {
+        "XGB_TreeSHAP": {
+          "SAR": 0.1713653951883316,
+          "OPT": 0.2672719955444336,
+          "TER": 0.561362624168396
+        },
+        "XGB_Perm": {
+          "SAR": 0.23399341279268224,
+          "OPT": 0.15630017012701325,
+          "TER": 0.6097064170803045
+        },
+        "CNN_IG": {
+          "SAR": 0.05076385052921758,
+          "OPT": 0.4882389106991348,
+          "TER": 0.46099723877164767
+        },
+        "CNN_GradSHAP": {
+          "SAR": 0.13691176288164408,
+          "OPT": 0.5965470407979367,
+          "TER": 0.2665411963204194
+        },
+        "CNN_Perm": {
+          "SAR": 0.1401583325681418,
+          "OPT": 0.6625459193380785,
+          "TER": 0.19729574809377975
+        }
+      }
+    }
+  ],
+  "band_names": [
+    "swat_aspect_sin",
+    "swat_aspect_cos",
+    "swat_dem",
+    "swat_distriver",
+    "swat_draindens",
+    "swat_hand",
+    "swat_logfacc",
+    "swat_lulc_cls10",
+    "swat_lulc_cls20",
+    "swat_lulc_cls30",
+    "swat_lulc_cls40",
+    "swat_lulc_cls50",
+    "swat_lulc_cls60",
+    "swat_lulc_cls70",
+    "swat_lulc_cls80",
+    "swat_lulc_cls90",
+    "swat_lulc_cls100",
+    "swat_mndwi",
+    "swat_ndvi",
+    "swat_ndwi",
+    "swat_plancurv",
+    "swat_profcurv",
+    "swat_rainfall",
+    "swat_s1_vh",
+    "swat_s1_vv",
+    "swat_s2_composite_b0",
+    "swat_s2_composite_b1",
+    "swat_s2_composite_b2",
+    "swat_s2_composite_b3",
+    "swat_s2_composite_b4",
+    "swat_s2_composite_b5",
+    "swat_slope",
+    "swat_spi",
+    "swat_tpi1000",
+    "swat_tpi300",
+    "swat_twi"
+  ]
+}

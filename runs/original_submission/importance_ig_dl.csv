@@ -1,0 +1,16 @@
+# feature,mean_abs_ig
+swat_dem,5.544094
+swat_ndwi,4.0419383
+swat_ndvi,3.8846838
+swat_mndwi,3.7273383
+swat_rainfall,3.2827487
+swat_s1_vh,3.0432627
+swat_s2_composite_b4,2.9018161
+swat_s2_composite_b5,2.4241505
+swat_s1_vv,2.0251234
+swat_s2_composite_b2,1.9541274
+swat_slope,1.9111304
+swat_s2_composite_b0,1.6916673
+swat_s2_composite_b1,1.6868014
+swat_aspect_sin,1.1465527
+swat_s2_composite_b3,1.0908451
