@@ -19,7 +19,11 @@ from xai_analysis import save_fig, MUTED
 from make_figures import lonlat_ticks, scalebar_north, DS
 from segformer_flood import CFG, load_labels
 
-SOURCE = "../data/processed/susceptibility_xgb.tif"     # or runs/*/susceptibility.npy
+import os
+
+# data root: ../data by default (repository layout); override with SWAT_DATA
+DATA = os.environ.get("SWAT_DATA", "../data")
+SOURCE = os.path.join(DATA, "processed", "susceptibility_xgb.tif")  # or runs/*/susceptibility.npy
 
 # 5-class sequential scheme (single-hue ramp, light -> dark; CVD-safe)
 CLASS_COLORS = ["#d3e3f0", "#bdc9e1", "#74a9cf", "#2b8cbe", "#045a8d"]
@@ -33,11 +37,10 @@ def main():
             transform, crs = src.transform, str(src.crs)
     else:
         prob = np.load(SOURCE)
-        with rasterio.open("../data/raw/swat_dem.tif") as src:
+        with rasterio.open(os.path.join(DATA, "raw", "swat_dem.tif")) as src:
             transform, crs = src.transform, str(src.crs)
 
-    valid = np.load(CFG["valid_path"].replace("..", ".."))
-    labels = load_labels("../data/labels/flood_labels.tif", prob.shape)
+    labels = load_labels(os.path.join(DATA, "labels", "flood_labels.tif"), prob.shape)
     floodable = np.isfinite(labels)
     prob = np.where(floodable, prob, np.nan)
 
@@ -65,9 +68,8 @@ def main():
     handles = [Patch(color=c, label=n) for c, n in zip(CLASS_COLORS, CLASS_NAMES)]
     handles.append(Patch(color="#e6e6e6", label="Not assessed"))
     ax.legend(handles=handles, loc="lower right", fontsize=7,
-              title="Susceptibility", title_fontsize=7)
-    ax.set_title("Flood susceptibility â€” classified (floodable domain)",
-                 loc="left")
+              title="Susceptibility", title_fontsize=7,
+              frameon=True, facecolor="white", edgecolor="#999999", framealpha=0.95)
     save_fig(fig, "fig_final_classified_map")
 
 
