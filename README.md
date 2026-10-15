@@ -2,7 +2,7 @@
 
 Code, Google Earth Engine scripts, flood inventory and results for:
 
-> Ahmad, M., Ullah, Q.Z. *Spatial Validation and Explanation Agreement in Machine-Learning Flood Susceptibility Mapping: A Case Study of the Swat Basin, Pakistan.* Submitted, 2026. Repository: https://github.com/muqeetahmaad9/swat
+> Ahmad, M. *Spatial Validation and Explanation Agreement in Machine-Learning Flood Susceptibility Mapping: A Case Study of the Swat Basin, Pakistan.* Submitted, 2026. Repository: https://github.com/muqeetahmaad9/swat
 
 ## Contents
 
